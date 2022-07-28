@@ -1,6 +1,6 @@
 export function createFetch(url){
     function handleError(response){
-        if(!reponse.ok) throw Error(`${response.status}:${response.statusText}`)
+        if(!response.ok) throw Error(`${response.status}:${response.statusText}`)
 
         return response
     }
@@ -8,4 +8,5 @@ export function createFetch(url){
     return fetch(url)
         .then(response => handleError(response))
         .then(response => response.json())
+        .catch(err=>console.log(err.message))
 }
