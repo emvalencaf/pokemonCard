@@ -9,7 +9,7 @@ export class PokemonService{
 
     async getPokemon(uri){
         console.log("entrando no service")
-        const url = PARTH+uri
+        const url = PARTH + uri
         await createFetch(url)
             .then(response =>{
                 console.log(response, typeof response)
@@ -19,5 +19,4 @@ export class PokemonService{
             })
             .catch(err=>console.log(err.message))
     }
-
 }

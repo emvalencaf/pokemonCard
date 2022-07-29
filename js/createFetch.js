@@ -8,5 +8,4 @@ export function createFetch(url){
     return fetch(url)
         .then(response => handleError(response))
         .then(response => response.json())
-        .catch(err=>console.log(err.message))
 }

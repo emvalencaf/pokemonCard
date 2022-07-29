@@ -10,6 +10,8 @@ const pokemonController = new PokemonController(pokemonView, pokemonService)
 const form = document.querySelector("form")
 const input = document.querySelector("input")
 
+
+
 form.addEventListener("submit", (e) =>{
     e.preventDefault()
     let valor = input.value

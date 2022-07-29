@@ -1,0 +1,25 @@
+#cardContainer{
+    text-align: center;
+    text-transform: uppercase;
+
+    padding:20px;
+    margin:auto;
+}
+
+.pokemonType{
+    color:whitesmoke;
+
+    border: 0px transparent;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 4px 3px rgba(255, 255, 255, 0.445);
+
+    padding: 2px 45px;
+    margin:2px;
+}
+
+#pokemonContainer{
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.289);
+    padding: 10px;
+    margin:10px;
+}
