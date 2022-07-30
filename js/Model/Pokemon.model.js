@@ -6,7 +6,4 @@ export class PokemonModel{
         this.type = type
         this.abilities = abilities
     }
-    async pokedexEntries(url){
-        
-    }
 }

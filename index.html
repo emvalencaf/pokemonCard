@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Cartas de Pokemon</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pokemonColorType.css">
 </head>
 <body>
     <header>
@@ -14,11 +16,18 @@
         </h1>
     </header>
     <main>
-        <form action="">
-            <input type="text" placeholder="type the name or pokedex number"><button>gotta catch 'em all</button>
+        <form>
+            <input type="text" placeholder="type the name or pokedex number" class="input">
+            <button class="btn"><i></i></button>
         </form>
         <section>
-            <div id="cardContainer">
+            <div class="cardContainer">
+                <div class="headerCard">
+                    <h2 class="title">
+                        ( 1 ) BULBASSAUR
+                    </h2>
+                    <span class="pokemonType grass"> grass</span> <span class="pokemonType poison">poison</span>
+                </div>
             </div>
         </section>
     </main>

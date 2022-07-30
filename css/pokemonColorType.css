@@ -1,0 +1,96 @@
+:root{
+    --colorBug: #A8B820;
+    --colorDark: #705848;
+    --colorDragon: #7038F8;
+    --colorFighting: #C03028;
+    --colorIce: #98D8D8;
+    --colorGround: #E0C068;
+    --colorPsychic: #F85888;
+    --colorWater: #6890F0;
+    --colorNormal: #A8A878;
+    --colorPoison: #A040A0;
+    --colorSteel: #B8B8D0;
+    --colorRock: #B8A038;
+    --colorGrass: #78C850;
+    --colorFire: #F08030;
+    --colorFlying: #A890F0;
+    --colorFairy: #EE99AC;
+    --colorGhost: #705898;
+    --colorElectric: #F8D030;
+}
+
+/*cores do tipo de pokemon*/
+.pokemonType.fighting{
+    background-color: var(--colorFighting);
+}
+.pokemonType.bug{
+    background-color: var(--colorBug);
+}
+
+.pokemonType.dragon{
+    background-color: var(--colorDragon);
+}
+
+.pokemonType.ghost{
+    background-color: var(--colorGhost);
+}
+
+.pokemonType.dark{
+    background-color: var(--colorDark);
+}
+
+.pokemonType.fire{
+    background-color: var(--colorFire);
+}
+
+.pokemonType.water{
+    background-color: var(--colorWater);
+}
+
+.pokemonType.grass{
+    background-color: var(--colorGrass);
+}
+
+.pokemonType.poison{
+    background-color: var(--colorPoison);
+}
+
+.pokemonType.flying{
+    background-color: var(--colorFlying);
+}
+
+.pokemonType.fairy{
+    background-color: var(--colorFairy);
+}
+
+.pokemonType.normal{
+    background-color: var(--colorNormal);
+}
+
+.pokemonType.ground{
+    background-color: var(--colorGround);
+}
+
+.pokemonType.rock{
+    background-color: var(--colorRock);
+}
+
+.pokemonType.fairy{
+    background-color: var(--colorFairy);
+}
+
+.pokemonType.ice{
+    background-color: var(--colorIce);
+}
+
+.pokemonType.steel{
+    background-color: var(--colorSteel);
+}
+
+.pokemonType.eletric{
+    background-color: var(--colorElectric);
+}
+
+.pokemonType.psychic{
+    background-color: var(--colorPsychic);
+}

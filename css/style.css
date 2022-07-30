@@ -1,4 +1,32 @@
-#cardContainer{
+header{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    display:flex;
+    flex-direction: row;
+    max-width: 500px;
+    
+}
+
+form .input{
+
+    border:1px solid rgba(0, 0, 0, 0.345);
+    border-radius: 2.5px;
+    outline: none;
+    
+    padding: 6px;
+}
+
+form .btn{
+
+    border:1px solid rgba(0, 0, 0, 0.437);
+    padding: 19px;
+}
+
+.cardContainer{
     text-align: center;
     text-transform: uppercase;
 
@@ -17,7 +45,7 @@
     margin:2px;
 }
 
-#pokemonContainer{
+.pokemonContainer{
     border-radius: 5px;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.289);
     padding: 10px;

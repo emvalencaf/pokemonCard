@@ -9,7 +9,7 @@ export class PokemonService{
 
     async getPokemon(uri){
         console.log("entrando no service")
-        const url = PARTH + uri
+        const url = PARTH + "pokemon/" + uri
         await createFetch(url)
             .then(response =>{
                 console.log(response, typeof response)
@@ -17,6 +17,15 @@ export class PokemonService{
                 const sprite = sprites.front_default
                 this.pokemon = new PokemonModel(id, name, sprite, types, abilities)
             })
-            .catch(err=>console.log(err.message))
+    }
+
+    async getPokemonEntry(uri){
+        console.log("entrando no service")
+        const url = PARTH + "pokemon-species/" + uri
+        await createFetch(url)
+            .then(response =>{
+                const {flavor_text} = response.flavor_text_entries.findLast(entrada=> entrada.language.name === "en")
+                this.pokemon.entry = flavor_text
+            })
     }
 }

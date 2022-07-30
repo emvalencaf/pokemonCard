@@ -1,1 +1,1 @@
-export const PARTH = "https://pokeapi.co/api/v2/pokemon/"
+export const PARTH = "https://pokeapi.co/api/v2/"
