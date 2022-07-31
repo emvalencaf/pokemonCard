@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: #c83737;
+}
+
+body h1{
+    color: #f5f5f5;
+}

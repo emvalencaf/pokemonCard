@@ -4,14 +4,15 @@ header{
     margin-bottom: 20px;
 }
 
+
 form{
-    display:flex;
-    flex-direction: row;
+
     max-width: 500px;
-    
+    margin: auto;
+    text-align: center;
 }
 
-form .input{
+form .label-input{
 
     border:1px solid rgba(0, 0, 0, 0.345);
     border-radius: 2.5px;
@@ -27,12 +28,43 @@ form .btn{
 }
 
 .cardContainer{
+
+    background-color: aliceblue;
     text-align: center;
-    text-transform: uppercase;
 
     padding:20px;
-    margin:auto;
+    margin:50px auto;
+
+    border-radius: 5px;
+    max-width: 500px;
+
+    height: 380px;
 }
+
+.headerCard{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #faebd76e;
+    text-transform: uppercase;
+
+    border-radius: 10px;
+}
+
+.headerCard .pokemonId{
+    background-color: white;
+
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 100px;
+}
+
+.headerCard .title{
+    margin:10px;
+}
+
+
 
 .pokemonType{
     color:whitesmoke;
@@ -42,12 +74,35 @@ form .btn{
     box-shadow: inset 0px 0px 4px 3px rgba(255, 255, 255, 0.445);
 
     padding: 2px 45px;
-    margin:2px;
+    margin:2px 2px;
 }
 
 .pokemonContainer{
+
     border-radius: 5px;
-    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.289);
+    box-shadow: inset 0px 0px 90px hsla(0, 2%, 51%, 0.427);
     padding: 10px;
-    margin:10px;
+    margin: 20px auto;
+
+    max-width: 270px;
+    max-height: 120px;
+
+    height:120px;
+}
+
+.pokemonContainer img{
+    height: 100px;
+    width:100px;
+}
+
+.pokedexEntry{
+    background-color: rgba(250, 235, 215, 0.248);
+
+    border-radius: 3px;
+}
+
+.pokedexEntry .text{
+    text-align: justify;
+
+    padding: 10px;
 }

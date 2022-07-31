@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/pokemonColorType.css">
+    <link rel="stylesheet" href="./css/loading.css">
 </head>
 <body>
     <header>
@@ -17,16 +18,31 @@
     </header>
     <main>
         <form>
-            <input type="text" placeholder="type the name or pokedex number" class="input">
-            <button class="btn"><i></i></button>
+            <label for="find" class="label-find">
+                <span class="span">type the name or pokedex general number</span>
+                <input type="text" name="find" class="label-input">
+            </label>
+            <abbr title="gotta catch 'em all"><button class="btn"></button></abbr>
         </form>
         <section>
             <div class="cardContainer">
                 <div class="headerCard">
+                    <span>5</span>
+                    <i class="pokemonId">
+                    </i>
                     <h2 class="title">
-                        ( 1 ) BULBASSAUR
+                        Bulbassauro
                     </h2>
-                    <span class="pokemonType grass"> grass</span> <span class="pokemonType poison">poison</span>
+                    <span class="pokemonType"></span>
+                </div>
+                <div class="pokemonContainer">
+                </div>
+                <div class="pokedexEntry">
+                    <h3 class="title">
+                        Pokedex entry
+                    </h3>
+                    <p class="text">
+                    </p>
                 </div>
             </div>
         </section>
