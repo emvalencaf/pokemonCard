@@ -5,46 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Cartas de Pokemon</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="./css/pokemonColorType.css">
-    <link rel="stylesheet" href="./css/loading.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Find your pokemon!
+    <header class="header-pokemon-card">
+        <h1 class="title">
+            PokeCarDex
         </h1>
     </header>
     <main>
-        <form>
-            <label for="find" class="label-find">
-                <span class="span">type the name or pokedex general number</span>
-                <input type="text" name="find" class="label-input">
-            </label>
-            <abbr title="gotta catch 'em all"><button class="btn"></button></abbr>
-        </form>
-        <section>
-            <div class="cardContainer">
-                <div class="headerCard">
-                    <span>5</span>
-                    <i class="pokemonId">
-                    </i>
-                    <h2 class="title">
-                        Bulbassauro
-                    </h2>
-                    <span class="pokemonType"></span>
-                </div>
-                <div class="pokemonContainer">
-                </div>
-                <div class="pokedexEntry">
-                    <h3 class="title">
-                        Pokedex entry
-                    </h3>
-                    <p class="text">
-                    </p>
-                </div>
-            </div>
+        <section class="section-form">
+            <form class="form-pokemon-card">
+                <span class="text">Search a pokemon by its pokedex's number or name</span>
+                <input type="text" class="input">
+                <button class="btn">search</button>
+            </form>
+        </section>
+        <section class="pokemon-card">
+            <ul class="pokemon-card-body">
+<!--
+                <li class="head-pokemon-card">
+                    <div class="card-information">
+                        <h2 class="title">Pokemon's name</h2>
+                    </div>
+                </li>
+                <li class="main-pokemon-card">
+                    <div class="container">
+                        <div class="card-type">
+                            type
+                        </div>
+                        <div class="card-type">
+                            type
+                        </div>
+                    </div>
+                    <div class="card-image">
+
+                    </div>
+                </li>
+                <li class="main-pokemon-card">
+                    <div class="card-information">
+                        <p class="text">
+                            <strong>PokeDex's entry</strong>: entry descriptions
+                        </p>
+                    </div>
+                </li>
+            </ul>-->
         </section>
     </main>
     <footer>

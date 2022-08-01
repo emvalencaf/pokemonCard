@@ -10,4 +10,8 @@ export class PokemonController{
         await this.service.getPokemonEntry(uri)
         this.view.render(this.service.pokemon)
     }
+
+    renderBackgroundImage(){
+        this.view.renderBackgroundImage(new Date())
+    }
 }
