@@ -13,9 +13,9 @@ export class PokemonService{
         await createFetch(url)
             .then(response =>{
                 console.log(response, typeof response)
-                const {id, name, types, abilities, sprites} = response
+                const {id, name, types, abilities, sprites, stats} = response
                 const sprite = sprites.front_default
-                this.pokemon = new PokemonModel(id, name, sprite, types, abilities)
+                this.pokemon = new PokemonModel(id, name, sprite, types, abilities, stats)
             })
     }
 

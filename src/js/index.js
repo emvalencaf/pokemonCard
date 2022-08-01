@@ -20,3 +20,9 @@ form.addEventListener("submit", (e) =>{
 
     pokemonController.getPokemon(valor)
 })
+
+pokemonController.view.container.addEventListener("click", (e)=>{
+    if(!e.target.children.length) return
+    
+    return pokemonController.toggleCard()
+})
