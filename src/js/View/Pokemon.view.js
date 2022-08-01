@@ -57,7 +57,7 @@ export class PokemonView{
 
     renderBackgroundImage(date){
         const time = this.DayorNight(date.getHours())
-        document.body.style.backgroundImage = `url('../src/imagens/background-${time}.gif')`
+        document.body.style.backgroundImage = `url('./src/imagens/background-${time}.gif')`
     }
 
     DayorNight(hours){

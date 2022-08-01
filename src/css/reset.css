@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('../imagens/background-day.gif');
+    background-image: url('./imagens/background-day.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

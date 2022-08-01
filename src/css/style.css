@@ -150,9 +150,9 @@
     display: flex;
     align-content: center;
     justify-self: center;
+    border-radius: 5px;
 
     width: 300px;
-
     margin:20px;
 
 }
