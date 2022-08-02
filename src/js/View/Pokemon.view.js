@@ -10,7 +10,6 @@ export class PokemonView{
 
         this.isFrontCard = true
 
-        console.log(pokemon)
         const html = `
         <li class="head-pokemon-card">
             <div class="card-information">
@@ -43,7 +42,7 @@ export class PokemonView{
             </div>
         </li>
         `
-        console.log(html)
+
         this.container.innerHTML = html
 
     }

@@ -8,7 +8,6 @@ export class PokemonController{
 
         uri = this.uriValidation(uri)
 
-        console.log("controller", typeof uri)
         await this.service.getPokemon(uri)
         await this.service.getPokemonEntry(uri)
         this.view.render(this.service.pokemon)

@@ -8,8 +8,9 @@ export class PokemonService{
     }
 
     async getPokemon(uri){
-        console.log("entrando no service")
+
         const url = PARTH + "pokemon/" + uri
+
         await createFetch(url)
             .then(response =>{
                 console.log(response, typeof response)
@@ -20,8 +21,9 @@ export class PokemonService{
     }
 
     async getPokemonEntry(uri){
-        console.log("entrando no service")
+
         const url = PARTH + "pokemon-species/" + uri
+        
         await createFetch(url)
             .then(response =>{
                 const {flavor_text} = response.flavor_text_entries.findLast(entrada=> entrada.language.name === "en")
