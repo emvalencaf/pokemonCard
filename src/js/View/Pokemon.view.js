@@ -33,7 +33,7 @@ export class PokemonView{
             </div>
         </li>
         <li class="main-pokemon-card">
-            <div class="container">
+            <div class="container ability">
                 ${this.renderAbillityList(pokemon.abilities)}
             </div>
         </li> 
@@ -48,7 +48,7 @@ export class PokemonView{
         return abilities.map(ability=>`
             <span>
                 ${ability.ability.name}
-            <span>
+            </span>
         `).join("")
     }
     

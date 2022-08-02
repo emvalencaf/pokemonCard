@@ -207,14 +207,32 @@
 
 .card-image img{
     background-color: white;
-    width: 90px;
-    height: 90px;
+    width: 125px;
+    height: 125px;
 
     margin: auto;
 }
 
 .main-information .stat .card-information text{
     width: 370px;
+}
+
+.main-pokemon-card .container.ability{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px;
+}
+
+.main-pokemon-card .container.ability span{
+    width: 90px;
+
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 8px 2px rgba(0, 0, 0, 0.503);
+
+    margin:5px;
+    padding: 1px 5px;
 }
 
 footer{
