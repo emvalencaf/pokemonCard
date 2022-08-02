@@ -98,40 +98,8 @@ export class PokemonView{
         }).join("")
     }
 
-    renderBackCard(pokemon){
-
-        this.clearHTML()
-
-        this.isFrontCard = false
-
-        let html = `
-        <li class="head-pokemon-card">
-            <div class="card-information">
-                <h2 class="title"> ${pokemon.id} - ${pokemon.name}</h2>
-            </div>
-        </li>
-        `
-        html += pokemon.stats.map(stat=>{
-        return `
-            <li class="main-information stat">
-                <div class="card-information">
-                    <p class="text">${stat.stat.name}</p>
-                    <progress value=${stat.base_stat} max="255" class="stat-bar">
-                </div>
-            </li>
-            `
-        }).join("")
-
-        this.container.innerHTML = html
-    }
-
     clearHTML(){
         this.container.innerHTML = ""
     }
 
-    toggleCard(pokemon){
-        if(!this.isFrontCard) return this.render(pokemon)
-
-        this.renderBackCard(pokemon)
-    }
 }

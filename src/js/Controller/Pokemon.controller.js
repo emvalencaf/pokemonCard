@@ -28,8 +28,5 @@ export class PokemonController{
         this.view.renderBackgroundImage(new Date())
     }
 
-    toggleCard(){
-        this.view.toggleCard(this.service.pokemon)
-    }
 
 }
