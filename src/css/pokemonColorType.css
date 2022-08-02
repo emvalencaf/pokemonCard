@@ -19,8 +19,13 @@
     --colorElectric: #F8D030;
 }
 .card-type.pokemonType{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
+    width:50px;
 }
+
 /*cores do tipo de pokemon*/
 .pokemonType.fighting{
     background-color: var(--colorFighting);

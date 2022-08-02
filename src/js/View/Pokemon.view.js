@@ -30,9 +30,13 @@ export class PokemonView{
                 <p class="text">
                     <abbr title="PokeDex's entry">${pokemon.entry}</abbr>
                 </p>
-                ${this.renderAbillityList(pokemon.abilities)}
             </div>
         </li>
+        <li class="main-pokemon-card">
+            <div class="container">
+                ${this.renderAbillityList(pokemon.abilities)}
+            </div>
+        </li> 
         `
         console.log(html)
         this.container.innerHTML = html
@@ -42,15 +46,17 @@ export class PokemonView{
     renderAbillityList(abilities){
 
         return abilities.map(ability=>`
-        <p>
-            ${ability.ability.name}
-        </p>
+            <span>
+                ${ability.ability.name}
+            <span>
         `).join("")
     }
     
     renderTypeList(types){
         return types.map(slot=>{
-            return `<div class="card-type pokemonType ${slot.type.name}">${slot.type.name}</div>`
+            return `<div class="card-type pokemonType ${slot.type.name}">
+                <span>${slot.type.name}</span>
+            </div>`
         }).join("")
     }
 
