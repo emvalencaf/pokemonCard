@@ -33,9 +33,9 @@ export class PokemonView{
             </div>
         </li>
         <li class="main-pokemon-card">
-            <div class="container ability">
+            <abbr title="pokemon's abillties"><div class="container ability">
                 ${this.renderAbillityList(pokemon.abilities)}
-            </div>
+            </div></abbr>
         </li>
         <li class="main-pokemon-card">
             <div class="container">
@@ -78,14 +78,20 @@ export class PokemonView{
 
     renderStats(stats){
         console.log(stats)
+        const abbr = {
+            attack: "atk",
+            defense: "def",
+            "special-attack": "sp. atk",
+            "special-defense": "sp. def",
+            speed: "spd"
+        }
         return stats.map(stat=>{
             if(stat.stat.name === "hp") return
-
             return `
-            <div class="container stat">
-                <span class="title">${stat.stat.name}</span>
+            <abbr title="${stat.stat.name}"><div class="container stat">
+                <span class="title">${abbr[stat.stat.name]}</span>
                 <span class="text">${stat.base_stat}</span>
-            </div>
+            </div></abbr>
             `
         }).join("")
     }
