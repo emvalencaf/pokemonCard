@@ -221,19 +221,41 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin:10px;
+    justify-content: center;
+    margin:3px;
 }
 
 .main-pokemon-card .container.ability span{
-    width: 90px;
+    font-size: 0.8em;
+    width: 100px;
 
     border-radius: 5px;
     box-shadow: inset 0px 0px 8px 2px rgba(0, 0, 0, 0.503);
 
     margin:5px;
-    padding: 1px 5px;
+    padding: 5px;
+    
 }
+
+.main-pokemon-card .container.stat{
+    background-color: rgba(248, 248, 255, 0.504);
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.289);
+    margin: 0px 14px;
+}
+
+.main-pokemon-card .container.stat .title{
+    width:60px;
+}
+
 
 footer{
     position: fixed;

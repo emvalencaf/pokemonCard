@@ -36,7 +36,12 @@ export class PokemonView{
             <div class="container ability">
                 ${this.renderAbillityList(pokemon.abilities)}
             </div>
-        </li> 
+        </li>
+        <li class="main-pokemon-card">
+            <div class="container">
+                ${this.renderStats(pokemon.stats)}
+            </div>
+        </li>
         `
         console.log(html)
         this.container.innerHTML = html
@@ -69,6 +74,20 @@ export class PokemonView{
         if(hours >= 6 && hours < 17) return 'day'
 
         return 'night'
+    }
+
+    renderStats(stats){
+        console.log(stats)
+        return stats.map(stat=>{
+            if(stat.stat.name === "hp") return
+
+            return `
+            <div class="container stat">
+                <span class="title">${stat.stat.name}</span>
+                <span class="text">${stat.base_stat}</span>
+            </div>
+            `
+        }).join("")
     }
 
     renderBackCard(pokemon){
