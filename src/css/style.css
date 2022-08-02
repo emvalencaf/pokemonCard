@@ -75,7 +75,9 @@
 .pokemon-card .pokemon-card-body{
     color: rgb(25, 25, 25);
 
-    background-color: rgba(248, 248, 255, 0.816);
+    background-image: linear-gradient(16deg, #1a191994, transparent);
+
+    background-color: #f8f8ffd0;
 
     display: flex;
     flex-direction: column;
@@ -95,14 +97,50 @@
     
 }
 
-.head-pokemon-card{
-    margin: 10px;
+.head-pokemon-card .card-information{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .head-pokemon-card .card-information .title{
     text-transform: uppercase;
     font: normal normal 1em var(--font-card);
+    width: 300px;
 
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.547);
+    border-radius: 20px 0px 20px 0px;
+
+    padding: 2px 0px;
+}
+
+.head-pokemon-card .card-information div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.289);
+}
+
+.head-pokemon-card .card-information .pokeball{
+    background-image: linear-gradient(crimson,rgba(0, 0, 0, 0.532), white);
+}
+
+.head-pokemon-card .card-information .pokeball .text{
+    color:whitesmoke;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.388);
+}
+
+.head-pokemon-card .card-information div .text{
+    text-transform: uppercase;
+    font-size: small;
 }
 
 .main-pokemon-card{
@@ -114,11 +152,11 @@
     width: 300px;
 }
 
-.card-information{
+.main-pokemon-card .card-information{
     width: 320px;
 }
 
-.card-information .text{
+.main-pokemon-card .card-information .text{
 
     font-size:0.8em;
     text-align: justify;
@@ -162,7 +200,7 @@
 
     width: 300px;
     height: 150px;
-    margin:20px;
+    margin-bottom:10px;
 
 }
 
@@ -179,6 +217,7 @@
 }
 
 footer{
+    position: fixed;
 
     background-color: rgb(33, 32, 32);
     border-radius: 5px;
@@ -188,4 +227,6 @@ footer{
     height: 40px;
 
     opacity: 0.9;
+
+    bottom: 0;
 }

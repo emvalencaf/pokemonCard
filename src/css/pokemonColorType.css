@@ -18,7 +18,7 @@
     --colorGhost: #705898;
     --colorElectric: #F8D030;
 }
-.pokemonType{
+.card-type.pokemonType{
     text-transform: uppercase;
 }
 /*cores do tipo de pokemon*/

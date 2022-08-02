@@ -14,7 +14,7 @@ export class PokemonView{
         const html = `
         <li class="head-pokemon-card">
             <div class="card-information">
-                <h2 class="title"> ${pokemon.id} - ${pokemon.name}</h2>
+                <div class="pokeball"><span class="text">${pokemon.id}</span></div><h2 class="title">${pokemon.name}</h2><div><span class="text">hp</span><span class="text">${pokemon.stats[0].base_stat}</span></div>
             </div>
         </li>
         <li class="main-pokemon-card">
@@ -28,7 +28,7 @@ export class PokemonView{
         <li class="main-pokemon-card">
             <div class="card-information">
                 <p class="text">
-                    <strong>PokeDex's entry</strong>: ${pokemon.entry}
+                    <abbr title="PokeDex's entry">${pokemon.entry}</abbr>
                 </p>
                 ${this.renderAbillityList(pokemon.abilities)}
             </div>
@@ -36,13 +36,12 @@ export class PokemonView{
         `
         console.log(html)
         this.container.innerHTML = html
+
     }
 
     renderAbillityList(abilities){
-        console.log(abilities)
-        console.log(abilities[0].ability.name)
-        console.log(abilities[0].is_hidden)
-        return abilities.filter(ability => ability.is_hidden).map(ability=>`
+
+        return abilities.map(ability=>`
         <p>
             ${ability.ability.name}
         </p>
