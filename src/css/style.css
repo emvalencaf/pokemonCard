@@ -130,6 +130,7 @@
     width: 40px;
     border-radius: 100px;
     box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.289);
+    background-color: rgba(248, 248, 255, 0.504);
 }
 
 .head-pokemon-card .card-information .pokeball{
@@ -144,6 +145,7 @@
 .head-pokemon-card .card-information div .text{
     text-transform: uppercase;
     font-size: small;
+    
 }
 
 .main-pokemon-card{
@@ -209,14 +211,19 @@
     height: 150px;
     margin-bottom:10px;
 
+    background-image: url("../imagens/card_background_ghost.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .card-image img{
-    background-color: white;
+
     width: 125px;
     height: 125px;
 
     margin: auto;
+
 }
 
 .main-information .stat .card-information text{

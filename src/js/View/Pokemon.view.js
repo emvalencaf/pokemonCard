@@ -22,7 +22,7 @@ export class PokemonView{
                 ${this.renderTypeList(pokemon.type)}
             </div>
             <div class="card-image pokemonType ${pokemon.type[0].type.name}">
-                <img src="${pokemon.sprite}" alt="imagem do pokemon nº ${pokemon.id}: ${pokemon.name}" class="pokemonType ${pokemon.type[0].type.name}">
+                <img src="${pokemon.sprite}" alt="imagem do pokemon nº ${pokemon.id}: ${pokemon.name}">
             </div>
         </li>
         <li class="main-pokemon-card">
@@ -88,10 +88,12 @@ export class PokemonView{
         return stats.map(stat=>{
             if(stat.stat.name === "hp") return
             return `
-            <abbr title="${stat.stat.name}"><div class="container stat">
-                <span class="title">${abbr[stat.stat.name]}</span>
-                <span class="text">${stat.base_stat}</span>
-            </div></abbr>
+            <abbr title="${stat.stat.name}">
+                <div class="container stat">
+                    <span class="title">${abbr[stat.stat.name]}</span>
+                    <span class="text">${stat.base_stat}</span>
+                </div>
+            </abbr>
             `
         }).join("")
     }
