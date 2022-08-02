@@ -17,3 +17,7 @@ body{
 ul{
     list-style: none;
 }
+
+abbr{
+    text-decoration: none;
+}

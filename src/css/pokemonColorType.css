@@ -18,7 +18,9 @@
     --colorGhost: #705898;
     --colorElectric: #F8D030;
 }
-
+.pokemonType{
+    text-transform: uppercase;
+}
 /*cores do tipo de pokemon*/
 .pokemonType.fighting{
     background-color: var(--colorFighting);
