@@ -20,6 +20,14 @@ form.addEventListener("submit", (e) =>{
     pokemonController.getPokemon(valor)
 })
 
-feedback.querySelector(".btn").addEventListener("click", e =>{
-    pokemonController.renderError()
+input.addEventListener("focus", e =>{
+    if(feedback.classList.contains("active")) return renderError()
 })
+
+feedback.querySelector(".btn").addEventListener("click", e =>{
+    renderError()
+})
+
+function renderError(){
+    pokemonController.renderError()
+}

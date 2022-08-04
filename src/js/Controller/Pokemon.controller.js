@@ -26,7 +26,7 @@ export class PokemonController{
 
         if(regex2.test(uri)) return uri = uri.toLowerCase().trim()
 
-        if(!regex2.test(uri)) throw Error("ERROR: pokemon's name cannot have special characters")
+        if(!regex2.test(uri)) throw Error("ERROR: pokemon's name cannot have special character")
 
         if(!uri || uri.length === 0) throw Error("ERROR: you must type a pokemon's name or it's pokedex's number")
     }

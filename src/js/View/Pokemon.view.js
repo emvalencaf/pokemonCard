@@ -102,15 +102,13 @@ export class PokemonView{
     renderError(err){
         
         if(!err) {
-            this.container_error.style.transform = "translateY(-100%)"
-            this.container_error.style.display = "none"
+            this.container_error.classList.remove("active")
             return
         }
 
         this.clearHTML()
 
         this.container_error.querySelector(".text").innerHTML = err
-        this.container_error.style.display = "flex"
-        this.container_error.style.transform = "translateY(0%)"
+        this.container_error.classList.add("active")
     }
 }
