@@ -6,11 +6,16 @@ export class PokemonController{
 
     async getPokemon(uri){
 
-        uri = this.uriValidation(uri)
-
-        await this.service.getPokemon(uri)
-        await this.service.getPokemonEntry(uri)
-        this.view.render(this.service.pokemon)
+        try {
+            uri = this.uriValidation(uri)
+            
+            await this.service.getPokemon(uri)
+            await this.service.getPokemonEntry(uri)
+            this.view.render(this.service.pokemon)
+            
+        } catch (err) {
+             this.renderError(err.message)
+        }
     }
 
     uriValidation(uri){
@@ -21,11 +26,16 @@ export class PokemonController{
 
         if(regex2.test(uri)) return uri = uri.toLowerCase().trim()
 
+        if(!regex2.test(uri)) throw Error("ERROR: pokemon's name cannot have special characters")
+
+        if(!uri || uri.length === 0) throw Error("ERROR: you must type a pokemon's name or it's pokedex's number")
     }
 
     renderBackgroundImage(){
         this.view.renderBackgroundImage(new Date())
     }
 
-
+    renderError(err){
+        this.view.renderError(err)
+    }
 }

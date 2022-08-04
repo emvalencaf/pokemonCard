@@ -1,14 +1,12 @@
 export class PokemonView{
-    constructor(card){
+    constructor(card, error){
         this.container = card
-        this.isFrontCard = true
+        this.container_error = error
     }
 
     render(pokemon){
 
         this.clearHTML()
-
-        this.isFrontCard = true
 
         const html = `
         <li class="head-pokemon-card">
@@ -101,4 +99,18 @@ export class PokemonView{
         this.container.innerHTML = ""
     }
 
+    renderError(err){
+        
+        if(!err) {
+            this.container_error.style.transform = "translateY(-100%)"
+            this.container_error.style.display = "none"
+            return
+        }
+
+        this.clearHTML()
+
+        this.container_error.querySelector(".text").innerHTML = err
+        this.container_error.style.display = "flex"
+        this.container_error.style.transform = "translateY(0%)"
+    }
 }
