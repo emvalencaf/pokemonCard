@@ -1,4 +1,7 @@
 @media (max-width:480px){
+    .alert .text{
+        padding:5px;
+    }
     .section-form .form-pokemon-card{
         max-width: 280px;
         max-height: 250px;
