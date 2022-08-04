@@ -19,7 +19,7 @@ export class PokemonController{
 
         if(regex.test(uri)) return uri = Number(uri)
 
-        if(regex2.test(uri)) return uri = uri.toLowerCase()
+        if(regex2.test(uri)) return uri = uri.toLowerCase().trim()
 
     }
 
