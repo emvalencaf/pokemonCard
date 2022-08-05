@@ -325,9 +325,12 @@
 
     background-color: rgba(201, 201, 222, 0.562);
 
+    transform: translateX(-10px) translateY(-5px);
+
 }
 .main-pokemon-card .container.stat .text{
     margin: 0px;
+    transform: translateY(-10px);
 }
 
 footer{
