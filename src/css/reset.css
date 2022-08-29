@@ -4,6 +4,12 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+
+
     background-image: url('./imagens/background-day.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +17,10 @@ body{
 
     background-color: rgb(66, 66, 66);/*#c83737;*/
     color:#f5f5f5;
+
     text-align: center;
+
+    height: 100vh;
 }
 
 ul{
